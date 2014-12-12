@@ -1,0 +1,100 @@
+header {
+    background: @white;
+    border-top: 5px solid @brand-success;
+    height: 91px;
+    padding: 16px 0;
+    box-shadow: 0 2px 9px 0px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 15;
+}
+
+.logo-wrap {
+    float: left;
+    margin-left: 14px;
+    margin-top: 13px;
+    > a {
+        display: block;
+    }
+}
+
+.powered-by {
+    #font > .proxima-nova-regular(12px, 15px);
+    color: @black-333333;
+    margin-top: 18px;
+    padding-right: 20px;
+    > img {
+        vertical-align: text-top;
+    }
+}
+
+.username-wrap {
+    margin-right: 35px;
+    > img {
+        border: 3px solid @brand-success;
+        border-radius: 50%;
+        padding: 1px;
+        width: 52px;
+        margin-top: -2px;
+    }
+}
+
+.user-non-admin {
+    color: @brand-success;
+}
+
+.user-admin {
+    color: @blue-19A3DB;
+    > img {
+        border: 3px solid @blue-19A3DB;
+    }
+}
+
+.header-user-btn {
+    padding: 3px 5px 5px;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.header-options {
+    left: -5px;
+    top: 37px;
+    width: 85px;
+    border: 0;
+    padding-bottom: 1px;
+    min-width: 120px;
+    padding-top: 6px;
+    border-radius: 2px;
+    width: 130px;
+    box-shadow: 0 0px 3px 0px rgba(0, 0, 0, 0.176);
+    > .divider {
+        margin: 0 0 3px;;
+    }
+    .h-option {
+        padding: 4px 10px;
+        color: @brand-text-color;
+        font-size: 12px;
+        line-height: 17px;
+        &:hover, &:active, &:focus {
+            background: @gray-EEEEEE;
+            color: @brand-text-color;
+        }
+    }
+}
+
+
+.login-options {
+    margin-top: 14px;
+    float: right;
+    > li {
+        display: inline-block;
+        color: @brand-text-color;
+        padding: 0 6px;
+        > a {
+            #font > .proxima-nova-regular(18px, 20px);
+        }
+    }
+    > .word-breaker {
+        padding: 0;
+    } 
+}

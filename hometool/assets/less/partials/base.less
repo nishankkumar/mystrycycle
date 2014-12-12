@@ -1,0 +1,38 @@
+.main-content {
+    min-height: 960px;
+    position: relative;
+}
+.container-main {
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0 15px;
+    .clearfix();
+    position: relative;
+    z-index: 10;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, ol {
+    padding: 0;
+    margin: 0;
+    .proxima-nova-regular();
+    color: @brand-text-color;
+}
+
+a {
+    &:hover, &:focus, &:active {
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+strong {
+    .proxima-nova-bold();
+}

@@ -1,0 +1,116 @@
+// All nav tabs code + sidebar navigation code goes here
+
+.navigation-tabs {
+    margin: 40px 0px 0;
+}
+
+.nav-list {
+    .clearfix();
+    > li {
+        float: left;
+    }
+}
+
+.appoint-active {
+    border-bottom: 12px solid @brand-success;
+    margin-bottom: -12px;
+    position: relative;
+    z-index: 15;
+}
+
+.nav-tab {
+    text-transform: uppercase;
+    display: block;
+    border-radius: 4px 4px 0 0;
+    letter-spacing: 2px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    position: relative;
+    padding: 10px 15px 6px;
+    border-bottom: 0;
+    z-index: 10;
+    &.clients {
+        z-index: 8;
+        margin-left: -20px;
+    }
+}
+
+.primary-tab {
+    color: @gray-949494;
+    background: @gray-EDEDED;
+    border: 1px solid #d8d8d8;
+    width: 200px;
+    border-bottom: 0;
+    &.active, &:hover, &:active, &:focus {
+        background: @white;
+        border: 0;
+        padding: 11px 15px 7px;
+        z-index: 12;
+        box-shadow: 0 -2px 1px 1px @gray-E1E2E2;
+    }
+}
+
+.appointment-tab {
+    margin-left: 169px;
+}
+
+.appoint-tab {
+    color: @black;
+    border-radius: 6px 6px 0 0;
+    background: @brand-success;
+    padding: 11px 15px 7px;
+    width: 240px;
+    &:hover, &:active, &:focus {
+        color: @black;
+    }
+}
+
+.onboarding-navigation {
+    float: left;
+    width: 270px;
+    height: 1250px;
+    border-right: 2px solid @gray-E2E3E4;
+    > li:first-child {
+        > a {
+            &.active {
+                border-top: 0;
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+.onboarding-tab {
+    font-size: 20px;
+    padding: 12px 20px 7px 48px;
+    display: block;
+    width: 86%;
+    line-height: 30px;
+    color: @gray-999999;
+    border-bottom: 2px solid @gray-E2E3E4;
+    position: relative;
+    > strong {
+        margin-right: 12px;
+        #font > .proxima-nova-bold(20px, 30px);
+        position: absolute;
+        top: 12px;
+        left: 19px;
+    }
+    &.active {
+        color: @brand-blue;
+        margin-bottom: -1px;
+        margin-top: -3px;
+        border-top: 3px solid @brand-success;
+        border-bottom: 3px solid @brand-success;
+    }
+}
+
+.tab-content {
+    > * {
+        display: none;
+    }
+    > .active {
+        display: block;
+    }
+}

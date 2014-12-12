@@ -1,0 +1,1718 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="bg-signup"></div>
+    <div class="container-main">
+        <div class="gradient-header">
+            <h2>Build Your HomeTool Company Profile</h2>
+        </div>
+        <div class="onboarding-container company-onboarding">
+            <ul class="onboarding-navigation">
+                <li>
+                    <a href="#company-profile" id="company-profile-tab" role="tab" data-toggle="tab" aria-controls="company-profile" aria-expanded="true" class="onboarding-tab" data-index="1">
+                        <strong>1</strong>
+                        Company
+                    </a>
+                </li>
+                <li>
+                    <a href="#services" id="services-tab" role="tab" data-toggle="tab" aria-controls="services" aria-expanded="true" class="onboarding-tab active" data-index="2">
+                        <strong>2</strong>
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#technicians" id="technicians-tab" role="tab" data-toggle="tab" aria-controls="technicians" aria-expanded="false" class="onboarding-tab" data-index="3">
+                        <strong>3</strong>
+                        Technicians
+                    </a>
+                </li>
+                <li>
+                    <a href="#billing" id="billing-tab" role="tab" data-toggle="tab" aria-controls="billing" aria-expanded="false" class="onboarding-tab" data-index="4">
+                        <strong>4</strong>
+                        Account Billing
+                    </a>
+                </li>
+                <li>
+                    <a href="#profile" id="profile-tab" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="false" class="onboarding-tab" data-index="5">
+                        <strong>5</strong>
+                        Notifications
+                    </a>
+                </li>
+                <li>
+                    <a href="#profile" id="profile-tab" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="false" class="onboarding-tab" data-index="6">
+                        <strong>6</strong>
+                        Add Widget
+                    </a>
+                </li>
+                <li class="status-btn-wrap">
+                    <a href="#" class="btn-main btn-main-blue js-form-status">Next</a>
+                </li>
+            </ul>
+            <div class="tabbed-content tab-content" id="myTabContent">
+                <form class="onboarding-form tab-pane fade" method="get" accept-charset="utf-8" role="tabpanel" id="company-profile" aria-labelledby="company-profile-tab">
+                    <div class="onboarding-fields-container company-feilds">
+                        <h3 class="onboarding-heading">Tell us about your company and we will use this information to build your HomeTool profile and preferences.</h3>
+                        <div class="onboarding-content left-column">
+                            <h4 class="onboarding-subhead">Company Contact Information</h4>
+                            <div class="form-group">
+                                <input type="text" placeholder="Company Name" class="form-control onboarding-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" placeholder="Business phone number" class="form-control onboarding-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Business email" class="form-control onboarding-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="url" placeholder="Business website" class="form-control onboarding-input">
+                            </div>
+                            <h4 class="onboarding-subhead">Company Address</h4>
+                            <div class="form-group has-error">
+                                <input type="text" placeholder="Address 1" class="form-control onboarding-input">
+                                <p class="onb-error-msg font14">This is a required feild</p>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Address 2" class="form-control onboarding-input">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="City" class="form-control onboarding-input">
+                            </div>
+                            <div class="form-group">
+                                <div class="dropdown onboarding-dropdown onboarding-input">
+                                    <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                        <span class="dropdown-placeholder font15">State</span>
+                                        <p class="dropdown-target font15"></p>
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                        <li class="dropdown-placeholder font15">State<span class="caret pull-right"></span></li>
+                                    </ul>
+                                    <select name="" class="hide js-select-menu">
+                                        <option value="0">Austin</option>
+                                        <option value="1">TX</option>
+                                        <option value="2">Alaska</option>
+                                        <option value="3">Albama</option>
+                                        <option value="4">California</option>                                
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Postal code" class="form-control onboarding-input">
+                            </div>
+                            <h4 class="onboarding-subhead">Social Media Profiles</h4>
+                            <div class="form-group">
+                                <label class="social-media-url">
+                                    <input type="text" class="form-control onboarding-input" placeholder="Yelp url">
+                                    <div class="social-media-icon yelp-icon"></div>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="social-media-url">
+                                    <input type="text" class="form-control onboarding-input" placeholder="Facebook url">
+                                    <div class="social-media-icon facebook-icon"></div>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="social-media-url">
+                                    <input type="text" class="form-control onboarding-input" placeholder="Twitter url">
+                                    <div class="social-media-icon twitter-icon"></div>
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="social-media-url">
+                                    <input type="text" class="form-control onboarding-input" placeholder="Google+ url">
+                                    <div class="social-media-icon googleplus-icon"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="onboarding-content right-column">
+                            <h4 class="onboarding-subhead">Company Logo</h4>
+                            <div class="image-container">
+                                <div class="company-image img-selected"><!--use img_selected image has been seleeted-->
+                                    <img src="{% static 'images/placeholder_pic.png' %}">
+                                </div>
+                                <div class="upload-options">
+                                    <label class="btn-main btn-main-yellow btn-small upload-btn"><input type="file">Browser & Upload</label>
+                                    <a href="#" class="delete-text">delete image</a>
+                                </div>
+                            </div>
+                            <h4 class="onboarding-subhead">Company Overview</h4>
+                            <div class="form-group">
+                                <textarea class="form-control onboarding-textarea" placeholder="Add a Short description about your company"></textarea>
+                            </div>
+                            <h4 class="onboarding-subhead">Company Hours</h4>
+                            <div class="hours-select-wrap">
+                                <ul class="company-hours-list">
+                                    <li class="weekday form-inline">
+                                        <div class="form-group">
+                                            <label class="day-name week-text font16">Sun</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">am</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="week-text font16">to</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">pm</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="weekday form-inline">
+                                        <div class="form-group">
+                                            <label class="day-name week-text font16">Mon</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">am</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="week-text font16">to</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">pm</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="weekday form-inline">
+                                        <div class="form-group">
+                                            <label class="day-name week-text font16">Tue</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">am</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="week-text font16">to</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">pm</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="weekday form-inline">
+                                        <div class="form-group">
+                                            <label class="day-name week-text font16">Wed</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">am</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="week-text font16">to</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">pm</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="weekday form-inline">
+                                        <div class="form-group">
+                                            <label class="day-name week-text font16">Thu</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">am</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="week-text font16">to</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">pm</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="weekday form-inline">
+                                        <div class="form-group">
+                                            <label class="day-name week-text font16">Fri</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">am</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="week-text font16">to</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">pm</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="weekday form-inline">
+                                        <div class="form-group">
+                                            <label class="day-name week-text font16">Sat</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">am</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="week-text font16">to</label>
+                                            <input type="text" class="time-input js-time form-control font15" placeholder="00:00"/>
+                                            <div class="dropdown">
+                                                <button class="daytime-pick dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    <p class="dropdown-target font15">pm</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu daytime-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                </ul>
+                                                <select class="hide js-select-menu">
+                                                    <option value="0">am</option>
+                                                    <option value="1">pm</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>                    
+                    </div>
+                    <div class="onboarding-fields-container license-feilds">
+                        <span class="line-break"></span>
+                        <div class="onboarding-content left-column">
+                            <h4 class="onboarding-subhead">License / Insurance / Bonding</h4>
+                            <div class="license-container js-licenses-wrap">
+                                <div class="form-group policy-group js-policy-group">
+                                    <span class="add js-modify-feild">+</span>
+                                    <input type="text" placeholder="License # (if applicable)" class="form-control onboarding-input">
+                                </div>
+                            </div>
+                            <a href="#" class="font12 add js-add-feild pull-right">add another licence #</a>
+                            <div class="insurance-check">
+                                <div class="checkbox custom-checkbox">
+                                    <label class="js-checkbox-toggle custom-check-label font12">
+                                        <input type="checkbox"> Insured
+                                    </label>
+                                </div>
+                                <div class="checkbox custom-checkbox">
+                                    <label class="js-checkbox-toggle custom-check-label font12">
+                                        <input type="checkbox" checked> Bonded
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="onboarding-content right-column">
+                            <h4 class="onboarding-subhead">Disclosure</h4>
+                            <div class="form-group">
+                                <textarea class="form-control onboarding-textarea disclosure-textarea" placeholder="Insert your company's regulatory disclosure (if applicable)"></textarea>
+                            </div>
+                        </div>
+                        <span class="line-break"></span>
+                        <p class="disclainer-text">HomeTool Disclaimer: <span>All statements concerning insurance and bonds are informational only, and are self-reported. Insurance and bonds can expire or be cancelled, so homeowners should always check such information for themselves.</span></p>
+                        <button type="submit" class="btn-main btn-main-yellow">Save Changes</button>
+                    </div>
+                </form>
+                <div class="service-container fade active in" role="tabpanel" id="services" aria-labelledby="services-tab">
+                    <form class="onboarding-form company-form" method="get" accept-charset="utf-8">
+                        <div class="onboarding-fields-container company-feilds">
+                            <h3 class="onboarding-heading">Add the industry and services you provide, trip fees, and whether you provide free estimates.</h3>
+                            <div class="services-content-wrap">
+                                <div class="onboarding-content left-column">
+                                    <h4 class="onboarding-subhead">Add Services</h4>
+                                    <div class="form-group">
+                                        <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                            <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                <span class="dropdown-placeholder font15">Select Industry</span>
+                                                <p class="dropdown-target font15"></p>
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li class="dropdown-placeholder font15">Select Industry<span class="caret pull-right"></span></li>
+                                            </ul>
+                                            <select name="" class="hide js-select-menu">
+                                                <option value="0">Home Theater and Automation</option>
+                                                <option value="1">TX</option>
+                                                <option value="2">Home Theater and Automation</option>
+                                                <option value="3">Home Theater and Automation</option>
+                                                <option value="4">Home Theater and Automation</option>                                
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                            <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                <span class="dropdown-placeholder js-services-text font15">Select specific services</span>
+                                                <p class="dropdown-target js-services-selected font15"></p>
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu onboarding-dropdown-list services-dropdown js-services-dropdown" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li class="dropdown-placeholder font15">Select specific services<span class="caret pull-right"></span>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <label class="js-checkbox-toggle custom-check-label font12">
+                                                        <input type="checkbox" checked> <span>Home Design</span>
+                                                    </label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <label class="js-checkbox-toggle custom-check-label font12">
+                                                        <input type="checkbox"> <span>Home Theater Design</span>
+                                                    </label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <label class="js-checkbox-toggle custom-check-label font12">
+                                                        <input type="checkbox"> <span>Home Theater Design</span>
+                                                    </label>
+                                                </li>
+                                                <li class="checkbox">
+                                                    <label class="js-checkbox-toggle custom-check-label font12">
+                                                        <input type="checkbox"> <span>Home Theater Design</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <button class="js-add-service btn-main-yellow btn-main btn-small service-btn"> <strong>&plus;</strong> Add Service</button>
+                                </div>
+                                <div class="onboarding-content no-subheading">
+                                    <div class="form-group inline-form-group">
+                                        <label class="inline-input-label">Free Estimates?</label>
+                                        <div class="dropdown onboarding-dropdown dropdown-small onboarding-input">
+                                            <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                <p class="dropdown-target font15">Yes</p>
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li class="dropdown-placeholder font15">Free Estimates?<span class="caret pull-right"></span></li>
+                                            </ul>
+                                            <select name="" class="hide js-select-menu">
+                                                <option value="0">Yes</option>
+                                                <option value="1">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group inline-form-group">
+                                        <label for="" class="inline-input-label">Trip Fee?</label>
+                                        <input type="text" class="form-control onboarding-input" placeholder="Value">
+                                    </div>
+                                    <div class="form-group inline-form-group">
+                                        <label class="inline-input-label">Trip Fee waived or deducted from completed work?</label>
+                                        <div class="dropdown onboarding-dropdown dropdown-small onboarding-input">
+                                            <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                <p class="dropdown-target font15">Yes</p>
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                <li class="dropdown-placeholder font15">Trip Fee?<span class="caret pull-right"></span></li>
+                                            </ul>
+                                            <select name="" class="hide js-select-menu">
+                                                <option value="0">Yes</option>
+                                                <option value="1">No</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <span class="end-line"></span>
+                        </div>
+                    </form>
+                    <div class="added-content-wrap">
+                        <h4 class="onboarding-subhead">Services Offered</h4>
+                        <div class="content-added js-content">
+                            <div class="static-info js-static-info">
+                                <div class="added-header">
+                                    <h3>Home Theater & Automation</h3>
+                                    <a href="#" class="js-remove-content remove-icon">&times</a>
+                                </div>
+                                <div class="added-body">
+                                    <div class="services-content">
+                                        <h5 class="added-sub-header">Specific Services</h5>
+                                        <ul class="added-list">
+                                            <li class="added-sub-content">Home Theater Design</li>
+                                            <li class="added-sub-content">Home Theater Integration</li>
+                                            <li class="added-sub-content">Home Theater Installation</li>
+                                            <li class="added-sub-content">Other - Home Theater</li>
+                                        </ul>
+                                    </div>
+                                    <div class="services-content">
+                                        <h5 class="added-sub-header">Service Rates</h5>
+                                        <ul class="added-list">
+                                            <li class="added-sub-content">$80 Trip Rate</li>
+                                            <li class="added-sub-content">Free Estimates are not provided</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="modify-info js-modify-info font12">edit-info</a>
+                                </div>
+                                <div class="delete-body">
+                                    <div class="delete-header">
+                                        <h4>Delete this service</h4>
+                                    </div>
+                                    <div class="delete-body-content">
+                                        <div class="delete-btn-wrap">
+                                            <a href="#" class="btn-main-yellow btn-xsmall btn-main remove js-choice">Yes</a>
+                                            <a href="#" class="btn-main-gray btn-main btn-xsmall js-choice">No</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-edit js-content-edit">
+                                <div class="added-header">
+                                    <h3 class="edit-subhead">Edit Services</h3>
+                                    <a href="#" class="js-cancel-edit modify-info font12">cancel edits</a>
+                                </div>
+                                <div class="added-body">
+                                    <form class="js-service-edit-form edit-service-wrap">
+                                        <div class="onboarding-content left-column">
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        <span class="dropdown-placeholder font15">Select Industry</span>
+                                                        <p class="dropdown-target font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li class="dropdown-placeholder font15">Select Industry<span class="caret pull-right"></span></li>
+                                                    </ul>
+                                                    <select name="" class="hide js-select-menu">
+                                                        <option value="0">Home Theater and Automation</option>
+                                                        <option value="1">TX</option>
+                                                        <option value="2">Home Theater and Automation</option>
+                                                        <option value="3">Home Theater and Automation</option>
+                                                        <option value="4">Home Theater and Automation</option>                                
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        <span class="dropdown-placeholder js-services-text font15">Select specific services</span>
+                                                        <p class="dropdown-target js-services-selected font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu onboarding-dropdown-list services-dropdown js-services-dropdown" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li class="dropdown-placeholder font15">Select specific services<span class="caret pull-right"></span>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Home Design</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Home Theater Design</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox" checked> <span>Home Theater Design</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Home Theater Design</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button class="js-add-service btn-main-yellow btn-main btn-small service-btn">Save Changes</button>
+                                        </div>
+                                        <div class="onboarding-content no-subheading">
+                                            <div class="form-group inline-form-group">
+                                                <label class="inline-input-label">Free Estimates?</label>
+                                                <div class="dropdown onboarding-dropdown dropdown-small onboarding-input">
+                                                    <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        <p class="dropdown-target font15">Yes</p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li class="dropdown-placeholder font15">Free Estimates?<span class="caret pull-right"></span></li>
+                                                    </ul>
+                                                    <select name="" class="hide js-select-menu">
+                                                        <option value="0">Yes</option>
+                                                        <option value="1">No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group inline-form-group">
+                                                <label for="" class="inline-input-label">Trip Fee?</label>
+                                                <input type="text" class="form-control onboarding-input" placeholder="Value">
+                                            </div>
+                                            <div class="form-group inline-form-group">
+                                                <label class="inline-input-label">Trip Fee waived or deducted from completed work?</label>
+                                                <div class="dropdown onboarding-dropdown dropdown-small onboarding-input">
+                                                    <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        <p class="dropdown-target font15">Yes</p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li class="dropdown-placeholder font15">Trip Fee?<span class="caret pull-right"></span></li>
+                                                    </ul>
+                                                    <select name="" class="hide js-select-menu">
+                                                        <option value="0">Yes</option>
+                                                        <option value="1">No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-added js-content">
+                            <div class="static-info js-static-info">
+                                <div class="added-header">
+                                    <h3>Home Theater & Automation</h3>
+                                    <a href="#" class="js-remove-content remove-icon">&times</a>
+                                </div>
+                                <div class="added-body">
+                                    <div class="services-content">
+                                        <h5 class="added-sub-header">Specific Services</h5>
+                                        <ul class="added-list">
+                                            <li class="added-sub-content">Home Theater Design</li>
+                                            <li class="added-sub-content">Home Theater Integration</li>
+                                            <li class="added-sub-content">Home Theater Installation</li>
+                                            <li class="added-sub-content">Other - Home Theater</li>
+                                        </ul>
+                                    </div>
+                                    <div class="services-content">
+                                        <h5 class="added-sub-header">Service Rates</h5>
+                                        <ul class="added-list">
+                                            <li class="added-sub-content">$80 Trip Rate</li>
+                                            <li class="added-sub-content">Free Estimates are not provided</li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="modify-info js-modify-info font12">edit-info</a>
+                                </div>
+                                <div class="delete-body">
+                                    <div class="delete-header">
+                                        <h4>Delete this service</h4>
+                                    </div>
+                                    <div class="delete-body-content">
+                                        <div class="delete-btn-wrap">
+                                            <a href="#" class="btn-main-yellow btn-xsmall btn-main remove js-choice">Yes</a>
+                                            <a href="#" class="btn-main-gray btn-main btn-xsmall js-choice">No</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-edit js-content-edit">
+                                <div class="added-header">
+                                    <h3 class="edit-subhead">Edit Services</h3>
+                                    <a href="#" class="js-cancel-edit modify-info font12">cancel edits</a>
+                                </div>
+                                <div class="added-body">
+                                    <form class="js-service-edit-form edit-service-wrap">
+                                        <div class="onboarding-content left-column">
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        <span class="dropdown-placeholder font15">Select Industry</span>
+                                                        <p class="dropdown-target font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li class="dropdown-placeholder font15">Select Industry<span class="caret pull-right"></span></li>
+                                                    </ul>
+                                                    <select name="" class="hide js-select-menu">
+                                                        <option value="0">Home Theater and Automation</option>
+                                                        <option value="1">TX</option>
+                                                        <option value="2">Home Theater and Automation</option>
+                                                        <option value="3">Home Theater and Automation</option>
+                                                        <option value="4">Home Theater and Automation</option>                                
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        <span class="dropdown-placeholder js-services-text font15">Select specific services</span>
+                                                        <p class="dropdown-target js-services-selected font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu onboarding-dropdown-list services-dropdown js-services-dropdown" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li class="dropdown-placeholder font15">Select specific services<span class="caret pull-right"></span>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox" checked> <span>Home Design</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Home Theater Design</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Home Theater Design</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Home Theater Design</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <button class="js-add-service btn-main-yellow btn-main btn-small service-btn">Save Changes</button>
+                                        </div>
+                                        <div class="onboarding-content no-subheading">
+                                            <div class="form-group inline-form-group">
+                                                <label class="inline-input-label">Free Estimates?</label>
+                                                <div class="dropdown onboarding-dropdown dropdown-small onboarding-input">
+                                                    <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        <p class="dropdown-target font15">Yes</p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li class="dropdown-placeholder font15">Free Estimates?<span class="caret pull-right"></span></li>
+                                                    </ul>
+                                                    <select name="" class="hide js-select-menu">
+                                                        <option value="0">Yes</option>
+                                                        <option value="1">No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="form-group inline-form-group">
+                                                <label for="" class="inline-input-label">Trip Fee?</label>
+                                                <input type="text" class="form-control onboarding-input" placeholder="Value">
+                                            </div>
+                                            <div class="form-group inline-form-group">
+                                                <label class="inline-input-label">Trip Fee waived or deducted from completed work?</label>
+                                                <div class="dropdown onboarding-dropdown dropdown-small onboarding-input">
+                                                    <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                        <p class="dropdown-target font15">Yes</p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target" role="menu" aria-labelledby="dropdownMenu1">
+                                                        <li class="dropdown-placeholder font15">Trip Fee?<span class="caret pull-right"></span></li>
+                                                    </ul>
+                                                    <select name="" class="hide js-select-menu">
+                                                        <option value="0">Yes</option>
+                                                        <option value="1">No</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="technician-container fade" role="tabpanel" id="technicians" aria-labelledby="technicians-tab">
+                    <form class="onboarding-form company-form" method="get" accept-charset="utf-8">
+                        <div class="onboarding-fields-container company-feilds">
+                            <h3 class="onboarding-heading">Add your service technicians, and their profile information. Your customers booking through HomeTool will be able to see this information.</h3>
+                            <div class="onboarding-content left-column">
+                                <h4 class="onboarding-subhead">Technician Information</h4>
+                                <div class="form-group">
+                                    <input type="text" placeholder="First Name" class="form-control onboarding-input">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" placeholder="Last Name" class="form-control onboarding-input">
+                                </div>
+                                <div class="form-group">
+                                    <input type="tel" placeholder="Mobile phone number" class="form-control onboarding-input">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" placeholder="Email address" class="form-control onboarding-input">
+                                </div>
+                                <div class="form-group">
+                                    <div class="dropdown onboarding-dropdown onboarding-input">
+                                        <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                            <span class="dropdown-placeholder font15">Languages (other than English)</span>
+                                            <p class="dropdown-target font15"></p>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu onboarding-dropdown-list services-dropdown js-services-dropdown" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li class="dropdown-placeholder font15">Languages (other than English)<span class="caret pull-right"></span>
+                                            </li>
+                                            <li class="checkbox">
+                                                <label class="js-checkbox-toggle custom-check-label font12">
+                                                    <input type="checkbox" checked> <span>Spanish</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <label class="js-checkbox-toggle custom-check-label font12">
+                                                    <input type="checkbox"> <span>French</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <label class="js-checkbox-toggle custom-check-label font12 js-other-options">
+                                                    <input type="checkbox"> <span>Other</span>
+                                                </label>
+                                                <input class='form-control onboarding-input in-dropdown hide' type='text' placeholder='Other languages, comma seperated' />
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="license-container js-licenses-wrap">
+                                        <div class="form-group policy-group js-policy-group">
+                                            <span class="add js-modify-feild">+</span>
+                                            <input type="text" placeholder="Trade license # (if applicable)" class="form-control onboarding-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="dropdown onboarding-dropdown onboarding-input">
+                                        <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                            <span class="dropdown-placeholder font15">Select specific services</span>
+                                            <p class="dropdown-target font15"></p>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu onboarding-dropdown-list services-dropdown js-services-dropdown" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li class="dropdown-placeholder font15">Select specific services<span class="caret pull-right"></span>
+                                            </li>
+                                            <li class="checkbox">
+                                                <label class="js-checkbox-toggle custom-check-label font12">
+                                                    <input type="checkbox" checked> <span>Drain Cleaning</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <label class="js-checkbox-toggle custom-check-label font12">
+                                                    <input type="checkbox"> <span>Water Heater - Gas</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <label class="js-checkbox-toggle custom-check-label font12">
+                                                    <input type="checkbox"> <span>Water Heater - Electric</span>
+                                                </label>
+                                            </li>
+                                            <li class="checkbox">
+                                                <label class="js-checkbox-toggle custom-check-label font12">
+                                                    <input type="checkbox"> <span>Toilet</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="dropdown onboarding-dropdown onboarding-input">
+                                        <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                            <span class="dropdown-placeholder font15">Select service area by...</span>
+                                            <p class="dropdown-target font15"></p>
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu onboarding-dropdown-list services-dropdown map-area-dropdown js-area-dropdown" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li class="dropdown-placeholder font15">Select service area by...<span class="caret pull-right"></span>
+                                            </li>
+                                            <li class="radio">
+                                                <label class="custom-radio js-radio-toggle active">
+                                                    <input type="radio" name="optionsRadio" id="type1" value="opt1">
+                                                    <span class="input-toggle-text font12">ZIP Code</span>
+                                                </label>
+                                                <input type="text" placeholder="Add ZIP Codes, comma seperated" class="form-control onboarding-input in-dropdown">
+                                            </li>
+                                            <li class="radio">
+                                                <label class="custom-radio js-radio-toggle">
+                                                    <input type="radio" class="js-radius-toggle" name="optionsRadio" id="type2" value="opt2">
+                                                    <span class="input-toggle-text font12">Radius</span>
+                                                </label>
+                                            </li>
+                                            <li class="dropdown onboarding-dropdown onboarding-input in-dropdown js-radius-select hide">
+                                                <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                    {# <span class="dropdown-placeholder font15">Select specific services</span> #}
+                                                    <p class="dropdown-target font15">Less than 10 Miles</p>
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target js-radius-list" role="menu" aria-labelledby="dropdownMenu1">
+                                                    <li class="dropdown-placeholder font15">Select Radius<span class="caret pull-right"></span></li>
+                                                </ul>
+                                                <select name="" class="hide js-select-menu" id="radiusInputValue">
+                                                    <option value="0">Less than 10 Miles</option>
+                                                    <option value="1">10 Miles</option>
+                                                    <option value="2">25 Miles</option>
+                                                    <option value="3">50 Miles</option>
+                                                    <option value="4">More than 100 Miles</option>
+                                                </select>
+                                                <input type="text" id="map-radius" class="hide">
+                                            </li>
+                                            <li class="map-container hide">
+                                                <div class="map-main" id="mapComesHere">
+
+                                                </div>
+                                                <p class="font12">Service area radius defaults to the business address. Move map to pin-point new location of radius zone. </p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <a href="#" class="service-btn btn-main btn-small btn-main-yellow"><strong>&plus;</strong> Add Technician</a>
+                            </div>
+                            <div class="onboarding-content right-column">
+                                <h4 class="onboarding-subhead">Technician Profile Image</h4>
+                                <div class="image-container">
+                                    <div class="profile-image"><!--use admin-ring for admin-->
+                                        <img src="{% static 'images/placeholder_pic.png' %}">
+                                    </div>
+                                    <div class="upload-options">
+                                        <label class="btn-main btn-main-yellow btn-small upload-btn"><input type="file">Browser & Upload</label>
+                                        <a href="#" class="delete-text">delete image</a>
+                                    </div>
+                                </div>
+                                <h4 class="onboarding-subhead">Technician Bio</h4>
+                                <div class="form-group">
+                                    <textarea class="form-control onboarding-textarea" placeholder="Add a Short description about your company"></textarea>
+                                </div>
+                                <div class="checkbox">
+                                    <label class="js-checkbox-toggle custom-check-label font12 checked">
+                                        <input type="checkbox"  class="js-isadmin-toggle" checked> <span>This Technician is admin</span>
+                                    </label>
+                                </div>
+                            </div>  
+                            <span class="end-line"></span>
+                        </div>
+                    </form>
+                    <div class="added-content-wrap">
+                        <h4 class="onboarding-subhead">Service Technicians</h4>
+                        <div class="content-added js-content">
+                            <div class="static-info js-static-info">
+                                <div class="added-header">
+                                    <h3>Michael Jonhson</h3>
+                                    <h6 class="acc-status">Account Owner & Admin</h6>
+                                    <a class="js-remove-content remove-icon" href="#">×</a>
+                                </div>
+                                <div class="added-body">
+                                    <div class="techi-info">
+                                        <div class="profile-image admin-ring"><!--use admin-ring for admin-->
+                                            <img src="/static/images/placeholder_pic.png">
+                                        </div>
+                                        <ul class="techi-basic-info">
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Mobile: </strong>512-625-8462</h5></li>
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Email: </strong>mjohnson@gmail.com</h5></li>
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Languages: </strong>English, Spanish</h5></li>
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Trade License: </strong>M-40462</h5></li>
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Service Area: </strong>20 mile radius</h5></li>
+                                        </ul>
+                                        <div class="services-content">
+                                            <h5 class="added-sub-header">Specific Services</h5>
+                                            <ul class="added-list">
+                                                <li class="added-sub-content">Service Type One</li>
+                                                <li class="added-sub-content">Service Type Two</li>
+                                                <li class="added-sub-content">Service Three</li>
+                                                <li class="added-sub-content">Service Four</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="techi-bio">
+                                        <h5 class="added-sub-header">Bio</h5>
+                                        <p class="added-sub-content">Michael has been a master plumber for the last 15 years. He specializes in all aspects of the plumbing trade and likes to pet kittens in his spare time.</p>
+                                    </div>
+                                    <a class="modify-info js-modify-info font12" href="#">edit-info</a>
+                                </div>
+                                <div class="delete-body">
+                                    <div class="delete-header">
+                                        <h4>Delete this Technician</h4>
+                                    </div>
+                                    <div class="delete-body-content">
+                                        <div class="delete-btn-wrap">
+                                            <a href="#" class="btn-main-gray btn-medium btn-main js-choice">No</a>
+                                            <a href="#" class="btn-main-yellow btn-medium btn-main remove js-choice">Yes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-edit js-content-edit">
+                                <div class="added-header">
+                                    <h3 class="edit-subhead">Edit Technician Information</h3>
+                                    <a class="js-cancel-edit modify-info font12" href="#">cancel edits</a>
+                                </div>
+                                <div class="added-body">
+                                    <form class="js-service-edit-form edit-service-wrap">
+                                        <div class="onboarding-content left-column">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control onboarding-input profile-info" placeholder="First Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control onboarding-input profile-info" placeholder="Last Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control onboarding-input profile-info" placeholder="Mobile phone number">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control onboarding-input profile-info" placeholder="Email address">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button aria-expanded="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="dropdown-trigger dropdown-toggle">
+                                                        <span class="dropdown-placeholder font15">Languages (other than English)</span>
+                                                        <p class="dropdown-target font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu onboarding-dropdown-list services-dropdown js-services-dropdown">
+                                                        <li class="dropdown-placeholder font15">Languages (other than English)<span class="caret pull-right"></span>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12 checked">
+                                                                <input type="checkbox" checked=""> <span>Spanish</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>French</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12 js-other-options">
+                                                                <input type="checkbox"> <span>Other</span>
+                                                            </label>
+                                                            <input class='form-control onboarding-input in-dropdown hide' type='text' placeholder='Other languages, comma seperated' />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="license-container js-licenses-wrap">
+                                                    <div class="form-group policy-group policy-sm js-policy-group">
+                                                        <span class="add js-modify-feild">+</span>
+                                                        <input type="text" class="form-control onboarding-input profile-info" placeholder="Trade license # (if applicable)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button aria-expanded="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="dropdown-trigger dropdown-toggle">
+                                                        <span class="dropdown-placeholder font15">Select specific services</span>
+                                                        <p class="dropdown-target font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu onboarding-dropdown-list services-dropdown js-services-dropdown">
+                                                        <li class="dropdown-placeholder font15">Select specific services<span class="caret pull-right"></span>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12 checked">
+                                                                <input type="checkbox" checked=""> <span>Drain Cleaning</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Water Heater - Gas</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Water Heater - Electric</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Toilet</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button aria-expanded="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="dropdown-trigger dropdown-toggle">
+                                                        <span class="dropdown-placeholder font15">Select service area by...</span>
+                                                        <p class="dropdown-target font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu onboarding-dropdown-list services-dropdown map-area-dropdown js-area-dropdown">
+                                                        <li class="dropdown-placeholder font15">Select service area by...<span class="caret pull-right"></span>
+                                                        </li>
+                                                        <li class="radio">
+                                                            <label class="custom-radio js-radio-toggle active">
+                                                                <input type="radio" value="opt1" id="type1" name="optionsRadio">
+                                                                <span class="input-toggle-text font12">ZIP Code</span>
+                                                            </label>
+                                                            <input type="text" class="form-control onboarding-input in-dropdown" placeholder="Add ZIP Codes, comma seperated">
+                                                        </li>
+                                                        <li class="radio">
+                                                            <label class="custom-radio js-radio-toggle">
+                                                                <input type="radio" class="js-radius-toggle" value="opt2" id="type2" name="optionsRadio">
+                                                                <span class="input-toggle-text font12">Radius</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="dropdown onboarding-dropdown onboarding-input in-dropdown js-radius-select hide">
+                                                            <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                                <p class="dropdown-target font15">Less than 10 Miles</p>
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target js-radius-list" role="menu" aria-labelledby="dropdownMenu1">
+                                                                <li class="dropdown-placeholder font15">Select Radius<span class="caret pull-right"></span></li>
+                                                            </ul>
+                                                            <select name="" class="hide js-select-menu" id="radiusInputValue">
+                                                                <option value="0">Less than 10 Miles</option>
+                                                                <option value="1">10 Miles</option>
+                                                                <option value="2">25 Miles</option>
+                                                                <option value="3">50 Miles</option>
+                                                                <option value="4">More than 100 Miles</option>
+                                                            </select>
+                                                            <input type="text" id="map-radius" class="hide small-map">
+                                                        </li>
+                                                        <li class="map-container map-small hide">
+                                                            <div class="map-main" id="edit-map"></div>
+                                                            <p class="font12">Service area radius defaults to the business address. Move map to pin-point new location of radius zone. </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <a class="service-btn btn-main btn-small btn-main-yellow" href="#">Save Changes</a>
+                                        </div>
+                                        <div class="onboarding-content right-column">
+                                            <div class="image-container">
+                                                <div class="profile-image"><!--use admin-ring for admin-->
+                                                    <img src="/static/images/placeholder_pic.png">
+                                                </div>
+                                                <div class="upload-options">
+                                                    <label class="btn-main btn-main-yellow btn-small upload-btn"><input type="file">Browser &amp; Upload</label>
+                                                    <a class="delete-text" href="#">delete image</a>
+                                                </div>
+                                            </div>
+                                            <h4 class="onboarding-subhead">Technician Bio</h4>
+                                            <div class="form-group">
+                                                <textarea placeholder="Add a Short description about your company" class="form-control onboarding-textarea"></textarea>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="js-checkbox-toggle custom-check-label font12">
+                                                    <input type="checkbox" class="js-isadmin-toggle"> <span>This Technician is admin</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-added js-content">
+                            <div class="static-info js-static-info">
+                                <div class="added-header">
+                                    <h3>Michael Jonhson</h3>
+                                    <a class="js-remove-content remove-icon" href="#">×</a>
+                                </div>
+                                <div class="added-body">
+                                    <div class="techi-info">
+                                        <div class="profile-image"><!--use admin-ring for admin-->
+                                            <img src="/static/images/placeholder_pic.png">
+                                        </div>
+                                        <ul class="techi-basic-info">
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Mobile: </strong>512-625-8462</h5></li>
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Email: </strong>mjohnson@gmail.com</h5></li>
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Languages: </strong>English, Spanish</h5></li>
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Trade License: </strong>M-40462</h5></li>
+                                            <li class="inline-info"><h5 class="added-sub-content"><strong class="added-sub-header">Service Area: </strong>20 mile radius</h5></li>
+                                        </ul>
+                                        <div class="services-content">
+                                            <h5 class="added-sub-header">Specific Services</h5>
+                                            <ul class="added-list">
+                                                <li class="added-sub-content">Service Type One</li>
+                                                <li class="added-sub-content">Service Type Two</li>
+                                                <li class="added-sub-content">Service Three</li>
+                                                <li class="added-sub-content">Service Four</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="techi-bio">
+                                        <h5 class="added-sub-header">Bio</h5>
+                                        <p class="added-sub-content">Michael has been a master plumber for the last 15 years. He specializes in all aspects of the plumbing trade and likes to pet kittens in his spare time.</p>
+                                    </div>
+                                    <a class="modify-info js-modify-info font12" href="#">edit-info</a>
+                                </div>
+                                <div class="delete-body">
+                                    <div class="delete-header">
+                                        <h4>Delete this Technician</h4>
+                                    </div>
+                                    <div class="delete-body-content">
+                                        <div class="delete-btn-wrap">
+                                            <a href="#" class="btn-main-gray btn-medium btn-main js-choice">No</a>
+                                            <a href="#" class="btn-main-yellow btn-medium btn-main remove js-choice">Yes</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content-edit js-content-edit">
+                                <div class="added-header">
+                                    <h3 class="edit-subhead">Edit Technician Information</h3>
+                                    <a class="js-cancel-edit modify-info font12" href="#">cancel edits</a>
+                                </div>
+                                <div class="added-body">
+                                    <form class="js-service-edit-form edit-service-wrap">
+                                        <div class="onboarding-content left-column">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control onboarding-input profile-info" placeholder="First Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control onboarding-input profile-info" placeholder="Last Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control onboarding-input profile-info" placeholder="Mobile phone number">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control onboarding-input profile-info" placeholder="Email address">
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button aria-expanded="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="dropdown-trigger dropdown-toggle">
+                                                        <span class="dropdown-placeholder font15">Languages (other than English)</span>
+                                                        <p class="dropdown-target font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu onboarding-dropdown-list services-dropdown js-services-dropdown">
+                                                        <li class="dropdown-placeholder font15">Languages (other than English)<span class="caret pull-right"></span>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12 checked">
+                                                                <input type="checkbox" checked=""> <span>Spanish</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>French</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12 js-other-options">
+                                                                <input type="checkbox"> <span>Other</span>
+                                                            </label>
+                                                            <input class='form-control onboarding-input in-dropdown hide' type='text' placeholder='Other languages, comma seperated' />
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="license-container js-licenses-wrap">
+                                                    <div class="form-group policy-group policy-sm js-policy-group">
+                                                        <span class="add js-modify-feild">+</span>
+                                                        <input type="text" class="form-control onboarding-input profile-info" placeholder="Trade license # (if applicable)">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button aria-expanded="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="dropdown-trigger dropdown-toggle">
+                                                        <span class="dropdown-placeholder font15">Select specific services</span>
+                                                        <p class="dropdown-target font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu onboarding-dropdown-list services-dropdown js-services-dropdown">
+                                                        <li class="dropdown-placeholder font15">Select specific services<span class="caret pull-right"></span>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12 checked">
+                                                                <input type="checkbox" checked=""> <span>Drain Cleaning</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Water Heater - Gas</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Water Heater - Electric</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="checkbox">
+                                                            <label class="js-checkbox-toggle custom-check-label font12">
+                                                                <input type="checkbox"> <span>Toilet</span>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="dropdown onboarding-dropdown onboarding-input profile-info">
+                                                    <button aria-expanded="true" data-toggle="dropdown" id="dropdownMenu1" type="button" class="dropdown-trigger dropdown-toggle">
+                                                        <span class="dropdown-placeholder font15">Select service area by...</span>
+                                                        <p class="dropdown-target font15"></p>
+                                                        <span class="caret"></span>
+                                                    </button>
+                                                    <ul aria-labelledby="dropdownMenu1" role="menu" class="dropdown-menu onboarding-dropdown-list services-dropdown map-area-dropdown js-area-dropdown">
+                                                        <li class="dropdown-placeholder font15">Select service area by...<span class="caret pull-right"></span>
+                                                        </li>
+                                                        <li class="radio">
+                                                            <label class="custom-radio js-radio-toggle active">
+                                                                <input type="radio" value="opt1" id="type1" name="optionsRadio">
+                                                                <span class="input-toggle-text font12">ZIP Code</span>
+                                                            </label>
+                                                            <input type="text" class="form-control onboarding-input in-dropdown" placeholder="Add ZIP Codes, comma seperated">
+                                                        </li>
+                                                        <li class="radio">
+                                                            <label class="custom-radio js-radio-toggle">
+                                                                <input type="radio" class="js-radius-toggle" value="opt2" id="type2" name="optionsRadio">
+                                                                <span class="input-toggle-text font12">Radius</span>
+                                                            </label>
+                                                        </li>
+                                                        <li class="dropdown onboarding-dropdown onboarding-input in-dropdown js-radius-select hide">
+                                                            <button class="dropdown-trigger dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                                                                <p class="dropdown-target font15">Less than 10 Miles</p>
+                                                                <span class="caret"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu onboarding-dropdown-list js-dropdown-list-target js-radius-list" role="menu" aria-labelledby="dropdownMenu1">
+                                                                <li class="dropdown-placeholder font15">Select Radius<span class="caret pull-right"></span></li>
+                                                            </ul>
+                                                            <select name="" class="hide js-select-menu" id="radiusInputValue">
+                                                                <option value="0">Less than 10 Miles</option>
+                                                                <option value="1">10 Miles</option>
+                                                                <option value="2">25 Miles</option>
+                                                                <option value="3">50 Miles</option>
+                                                                <option value="4">More than 100 Miles</option>
+                                                            </select>
+                                                            <input type="text" id="map-radius" class="hide small-map">
+                                                        </li>
+                                                        <li class="map-container map-small hide">
+                                                            <div class="map-main" id="edit-map"></div>
+                                                            <p class="font12">Service area radius defaults to the business address. Move map to pin-point new location of radius zone. </p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <a class="service-btn btn-main btn-small btn-main-yellow" href="#">Save Changes</a>
+                                        </div>
+                                        <div class="onboarding-content right-column">
+                                            <div class="image-container">
+                                                <div class="profile-image"><!--use admin-ring for admin-->
+                                                    <img src="/static/images/placeholder_pic.png">
+                                                </div>
+                                                <div class="upload-options">
+                                                    <label class="btn-main btn-main-yellow btn-small upload-btn"><input type="file">Browser &amp; Upload</label>
+                                                    <a class="delete-text" href="#">delete image</a>
+                                                </div>
+                                            </div>
+                                            <h4 class="onboarding-subhead">Technician Bio</h4>
+                                            <div class="form-group">
+                                                <textarea placeholder="Add a Short description about your company" class="form-control onboarding-textarea"></textarea>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label class="js-checkbox-toggle custom-check-label font12">
+                                                    <input type="checkbox" class="js-isadmin-toggle"> <span>This Technician is admin</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <form class="onboarding-fields-container notifications-form fade" role="tabpanel" id="company-notifications" aria-labelledby="company-notifications-tab">
+                    <h3 class="onboarding-heading">Settings for different levels and frequency of notifications. This is for company, technician, and customer notifications.</h3>
+                    <ul class="notifications-list">
+                        <li class="notification-header">
+                            <div class="notification-desc notify-opt">
+                                <h4 class="onboarding-subhead">Customer Notifications</h4>                         
+                            </div>
+                            <div class="notify-opt">
+                                <h4 class="onboarding-subhead">on</h4>                         
+                            </div>
+                            <div class="notify-opt">
+                                <h4 class="onboarding-subhead">off</h4>                         
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">New Appointment Set up</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio1" id="type1" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio1" id="type1">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Technician Appointment Verification</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio2" id="type2" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio2" id="type2">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio3" id="type3" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio3" id="type3">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio4" id="type4" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio4" id="type4">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio5" id="type5" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio5" id="type5">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio6" id="type6">
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio6" id="type6" checked>
+                                </label>                       
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="notifications-list">
+                        <li class="notification-header">
+                            <div class="notification-desc notify-opt">
+                                <h4 class="onboarding-subhead">Technician Notifications</h4>                         
+                            </div>
+                            <div class="notify-opt">
+                                <h4 class="onboarding-subhead">on</h4>                         
+                            </div>
+                            <div class="notify-opt">
+                                <h4 class="onboarding-subhead">off</h4>                         
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">New Appointment Set up</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio7" id="type1" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio7" id="type1">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Technician Appointment Verification</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio8" id="type2" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio8" id="type2">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio9" id="type3" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio9" id="type3">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio10" id="type4" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio10" id="type4">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio11" id="type5" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio11" id="type5">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio12" id="type6">
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio12" id="type6" checked>
+                                </label>                       
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="notifications-list">
+                        <li class="notification-header">
+                            <div class="notification-desc notify-opt">
+                                <h4 class="onboarding-subhead">Company Notifications</h4>                         
+                            </div>
+                            <div class="notify-opt">
+                                <h4 class="onboarding-subhead">on</h4>                         
+                            </div>
+                            <div class="notify-opt">
+                                <h4 class="onboarding-subhead">off</h4>                         
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">New Appointment Set up</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio13" id="type1" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio13" id="type1">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Technician Appointment Verification</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio14" id="type2" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio14" id="type2">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio15" id="type3" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio15" id="type3">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio16" id="type4" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio16" id="type4">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio17" id="type5" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio17" id="type5">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio18" id="type6">
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio18" id="type6" checked>
+                                </label>                       
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+                <div class="billing-container onboarding-fields-container fade" role="tabpanel" id="billing" aria-labelledby="billing-tab">
+                    <h3 class="onboarding-heading">This page is a placeholder for Stripe credit card account and billing information. </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

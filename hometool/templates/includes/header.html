@@ -1,0 +1,28 @@
+{% load staticfiles %}
+{% load config_tags %}
+
+<div class="container-main">
+    <div class="logo-wrap">
+        <a href="#"><img src="{% static 'images/hometool_logo_big.png' %}"></a>
+    </div>
+    <div class="pull-right hide">
+        <h6 class="powered-by">Online Booking Powered by <img src="{% static 'images/hometool_logo_small.png' %}"></h6>
+    </div>
+    <ul class="login-options hide">
+        <li><a href="#">Login</a></li>
+        <li class="word-breaker">|</li>
+        <li><a href="#">Sign up</a></li>
+    </ul>
+    <div class="username-wrap user-admin pull-right"><!-- Remove 'user-admin' and use 'user-non-admin' for non admin users-->
+        <img src="{% static 'images/profile-admin.png' %}" alt="">
+        <div class="btn-group"><!-- Remove 'user-admin' and use 'user-non-admin' for non admin users-->
+            <a class="user-admin header-user-btn" data-toggle="dropdown" aria-expanded="false">Hello, Joe</a>
+            <ul class="dropdown-menu header-options" role="menu">
+                <li><a href="#" class="h-option">My Company</a></li>
+                <li><a href="#" class="h-option">My Profile</a></li>
+                <li class="divider"></li>
+                <li><a href="#" class="h-option">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

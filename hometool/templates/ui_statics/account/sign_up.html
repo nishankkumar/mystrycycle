@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% load config_tags %}
+
+{% block content %}
+    <div class="bg-signup"></div>
+    <div class="bg-login"></div>
+    <div class="container-main">
+        <div class="signup-wrapper">
+            <div class="gradient-header">
+                <h2>Sign up for HomeTool today</h2>
+            </div>
+            <div class="registration-body">
+                <form class="registration-form" method="get" accept-charset="utf-8">
+                    <div class="form-group acc-input-grp">
+                        <input type="text" placeholder="First name" class="form-control account-input">
+                    </div>
+                    <div class="form-group acc-input-grp">
+                        <input type="text" placeholder="Last name" class="form-control account-input">
+                    </div>
+                    <div class="form-group acc-input-grp">
+                        <input type="text" placeholder="Business name" class="form-control account-input">
+                    </div>
+                    <div class="form-group acc-input-grp has-error">
+                        <input type="email" placeholder="Email address" class="form-control account-input">
+                        <!-- type='email' not supported in IE9 -->
+                        <p class="error-msg font15">This is error msg</p>
+                    </div>
+                    <div class="form-group acc-input-grp has-error">
+                        <input type="password" placeholder="Password" class="form-control account-input">
+                        <p class="error-msg font15">This is error msg</p>
+                    </div>
+                    <button type="submit" class="btn-main btn-main-yellow btn-large">Sign up</button>
+                </form>
+            </div>
+            <div class="registration-footer">
+                <p>
+                    By creating your account, you agree to<br/>
+                    HomeTool’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

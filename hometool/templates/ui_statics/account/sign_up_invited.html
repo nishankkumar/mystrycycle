@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% load config_tags %}
+
+{% block content %}
+    <div class="bg-signup"></div>
+    <div class="bg-login"></div>
+    <div class="container-main">
+        <div class="signup-wrapper invited">
+            <div class="gradient-header">
+                <h2>Sign up for HomeTool today</h2>
+            </div>
+            <div class="registration-body">
+                <div class="invited-user-wrap">
+                    <h4>Michael Johnson</h4>
+                    <h6>Depew Appliance Sales & Service</h6>
+                    <h6>mjohnson@gmail.com</h6>
+                </div>
+                <p class="invited-text">You’ve been added to HomeTool by Joe C.<br/> Create a password to complete the sign up process.</p>
+                <form class="registration-form" method="get" accept-charset="utf-8">
+                    <div class="form-group acc-input-grp">
+                        <input type="password" placeholder="Password" class="form-control account-input">
+                    </div>
+                    <button type="submit" class="btn-main btn-main-yellow btn-large">Sign up</button>
+                </form>
+            </div>
+            <div class="registration-footer invited">
+                <p>
+                    By creating your account, you agree to<br/>
+                    HomeTool’s <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

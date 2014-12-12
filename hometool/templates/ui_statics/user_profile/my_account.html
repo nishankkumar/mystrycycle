@@ -1,0 +1,194 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+    <div class="bg-gradient"></div>
+    <div class="container-main">
+        <div class="navigation-tabs">
+            <ul class="nav-list js-nav-list">
+                <li><a class="nav-tab primary-tab js-nav-tab" href="#schedule" id="schedule-tab" role="tab" data-toggle="tab" aria-controls="schedule" aria-expanded="false">Schedule</a></li>
+                <li><a class="nav-tab primary-tab clients js-nav-tab" href="#clients" id="clients-tab" role="tab" data-toggle="tab" aria-controls="clients" aria-expanded="false">clients</a></li>
+                <li class="appointment-tab"><a class="nav-tab appoint-tab js-nav-tab" href="#newappointments" id="newappointments-tab" role="tab" data-toggle="tab" aria-controls="newappointments" aria-expanded="false">+ new appointment</a></li>
+            </ul>
+        </div>
+        <div class="onboarding-container">
+            <ul class="onboarding-navigation" id="account-tabs">
+                <li>
+                    <a href="#profile" id="profile-tab" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="true" class="onboarding-tab active">
+                        <strong>1</strong>
+                        Profile
+                    </a>
+                </li>
+                <li>
+                    <a href="#password" id="password-tab" role="tab" data-toggle="tab" aria-controls="password" aria-expanded="false" class="onboarding-tab">
+                        <strong>2</strong>
+                        Password
+                    </a>
+                </li>
+                <li>
+                    <a href="#notifications" id="notifications-tab" role="tab" data-toggle="tab" aria-controls="notifications" aria-expanded="false" class="onboarding-tab">
+                        <strong>3</strong>
+                        Notifications
+                    </a>
+                </li>
+            </ul>
+            <div class="tabbed-content tab-content" id="myTabContent">
+                <form class="onboarding-fields-container tab-pane fade active in" method="get" accept-charset="utf-8" role="tabpanel" id="profile" aria-labelledby="profile-tab">
+                    <div class="onboarding-content left-column">
+                        <h4 class="onboarding-subhead">My Information</h4>
+                        <div class="form-group has-error">
+                            <input type="text" placeholder="First Name" class="form-control onboarding-input profile-info">
+                            <p>this is a error msg</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Last Name" class="form-control onboarding-input profile-info">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Number" class="form-control onboarding-input profile-info">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email address" class="form-control onboarding-input profile-info">
+                        </div>
+                        <button class="btn-main btn-main-yellow btn-small save-btn">Save Changes</button>
+                    </div>
+                    <div class="onboarding-content right-column">
+                        <h4 class="onboarding-subhead">Profile Image</h4>
+                        <div class="image-container">
+                            <div class="profile-image admin-ring"><!--use nonadmin-ring for nonadmin users-->
+                                <img src="{% static 'images/profile-admin.png' %}">
+                            </div>
+                            <div class="upload-options">
+                                <label class="btn-main btn-main-yellow btn-small upload-btn"><input type="file">Browser & Upload</label>
+                                <a href="#" class="delete-text">delete image</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <form class="onboarding-fields-container fade" method="get" accept-charset="utf-8" role="tabpanel" id="password" aria-labelledby="password-tab">
+                    <div class="onboarding-content">
+                            <h4 class="onboarding-subhead">Change Password</h4>
+                            <div class="form-group">
+                                <input type="password" placeholder="Current password" class="form-control onboarding-input profile-info">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="New password" class="form-control onboarding-input profile-info">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" placeholder="confirm password" class="form-control onboarding-input profile-info">
+                            </div>
+                            <button class="btn-main btn-main-yellow btn-small save-btn">Save Changes</button>
+                    </div>
+                    <span class="end-line"></span>
+                </form>
+                <form class="onboarding-fields-container notifications-form fade" role="tabpanel" id="notifications" aria-labelledby="notifications-tab">
+                    <ul class="notifications-list">
+                        <li class="notification-header">
+                            <div class="notification-desc notify-opt">
+                                <h4 class="onboarding-subhead">Email Notifications</h4>                         
+                            </div>
+                            <div class="notify-opt">
+                                <h4 class="onboarding-subhead">on</h4>                         
+                            </div>
+                            <div class="notify-opt">
+                                <h4 class="onboarding-subhead">off</h4>                         
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio1" id="type1" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio1" id="type1">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio2" id="type2" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio2" id="type2">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio3" id="type3" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio3" id="type3">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio4" id="type4" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio4" id="type4">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio5" id="type5" checked>
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio5" id="type5">
+                                </label>                       
+                            </div>
+                        </li>
+                        <li class="notification_options">
+                            <div class="notification-desc notify-opt">
+                                <p class="font15">Notification Type</p>
+                            </div>
+                            <div class="notify-opt radio on">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio6" id="type6">
+                                </label>
+                            </div>
+                            <div class="notify-opt radio off">
+                                <label class="custom-radio js-radio-toggle">
+                                    <input type="radio" name="radio6" id="type6" checked>
+                                </label>                       
+                            </div>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+        <div class="schedule-tab fade" role="tabpanel" id="schedule" aria-labelledby="schedule-tab">This is dummy content</div>
+        <div class="clients-tab fade" role="tabpanel" id="clients" aria-labelledby="clients-tab">This is clients content</div>
+        <div class="newappointments-tab fade" role="tabpanel" id="newappointments" aria-labelledby="newappointments-tab">This is newappointments content</div>
+    </div>
+{% endblock %}
+

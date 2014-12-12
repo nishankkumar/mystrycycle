@@ -1,0 +1,194 @@
+@bootstrap-base-url: "../bootstrap";   // Bootstrap base URL
+@partial-base-url: "../partials";    // Partials base URL
+@vendors-base-url: "../vendors";    // Partials base URL
+@images-base-url: "../../images";
+
+@import "@{partial-base-url}/fonts.less";
+
+// Core variables and mixin;
+@import "variables.less";
+@import "@{bootstrap-base-url}/mixins.less";
+
+// Reset and dependencies
+@import "@{bootstrap-base-url}/normalize.less";
+//@import "print.less";
+//@import "glyphicons.less";
+//
+//// Core CSS
+@import "@{bootstrap-base-url}/scaffolding.less";
+//@import "type.less";
+//@import "code.less";
+//@import "grid.less";
+//@import "tables.less";
+@import "@{bootstrap-base-url}/forms.less";
+@import "@{bootstrap-base-url}/buttons.less";
+//
+//// Components
+@import "@{bootstrap-base-url}/component-animations.less";
+@import "@{bootstrap-base-url}/dropdowns.less";
+@import "@{bootstrap-base-url}/button-groups.less";
+//@import "input-groups.less";
+//@import "navs.less";
+//@import "navbar.less";
+//@import "breadcrumbs.less";
+//@import "pagination.less";
+//@import "pager.less";
+//@import "labels.less";
+//@import "badges.less";
+//@import "jumbotron.less";
+//@import "thumbnails.less";
+//@import "alerts.less";
+//@import "progress-bars.less";
+//@import "media.less"
+//@import "list-group.less";
+//@import "panels.less";
+//@import "responsive-embed.less";
+//@import "wells.less";
+//@import "close.less";
+////
+//// Components w/ JavaScript
+//@import "modals.less";
+//@import "tooltip.less";
+//@import "popovers.less";
+//@import "carousel.less";
+
+//// Utility classes
+@import "@{bootstrap-base-url}/utilities.less";
+@import "@{bootstrap-base-url}/responsive-utilities.less";
+
+// Hometool third Party Vendor Style Files
+
+// Hometool Partial Style Files
+@import "@{partial-base-url}/mixins.less";
+@import "@{partial-base-url}/base.less";
+@import "@{partial-base-url}/header.less";
+@import "@{partial-base-url}/footer.less";
+@import "@{partial-base-url}/buttons-dropdowns.less";
+@import "@{partial-base-url}/navigations.less";
+@import "@{partial-base-url}/forms.less";
+/*@import "@{partial-base-url}/page.less";*/
+
+.widget_landing_wrap {
+    background: none repeat scroll 0 0 #fff;
+    border-color: #c2c0b1;
+    border-radius: 0 0 8px 8px;
+    border-width: 0 0 1px;
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 600px;
+    position: relative;
+    text-align: center;
+}
+
+.widget_head {
+    height: 20px;
+    background-color: #FFE01E;
+}
+
+.widget_main_wrap {
+    padding: 22px 14px 22px 32px;    
+}
+
+.widget_info_wrap {
+    float: left;
+    padding-top: 27px;
+    padding-right: 31px;
+    width: 268px;
+    > h1 {
+        color: #666666;
+        #font > .proxima-nova-regular(40px, 40px);
+        padding-bottom: 23px;
+    }
+    > p {
+        color: #19A3DB;
+        #font > .proxima-nova-regular(16px, 20px);
+        padding-bottom: 10px;
+    }
+}
+
+.widget_form_wrap {
+    border-left: 2px solid #d6d6d6;
+    float: left;
+    min-height: 338px;
+    padding: 15px 0 0 28px;
+    width: 285px;
+    .form-group {
+        padding-right: 15px;
+    }
+}
+.info_footer.info_footer {
+    color: #959595;
+    padding-top: 23px;
+    padding-bottom: 0px;
+    #font > .proxima-nova-regular(15px, 21px);
+    > strong {
+    }
+}
+.onboarding-subhead {
+    font-size: 16px;
+    line-height: 22px;
+    color: @blue-19A3DB;
+    margin-bottom: -6px;
+    text-align: left;
+}
+.onboarding-content {
+    width: 255px;
+    height: 213px;
+    > .form-group {
+        margin: 10px 0 0;
+        position: relative;
+    }
+    &.right-column {
+        margin-left: 20px;
+        > .checkbox {
+            margin-top: 17px;
+        }
+    }
+}
+.widget_subhead {
+    padding-top: 15px;
+}
+.widget_btn {
+    min-width: 192px;
+}
+.widget_date_input {
+    padding-left: 26px;
+    background: url("@{images-base-url}/form_calender.png") no-repeat scroll 4px 4px transparent;
+}
+.widget_time_input {
+    padding-left: 26px;
+    background: url("@{images-base-url}/form_time_picker.png") no-repeat scroll 4px 4px transparent;
+}
+.widget_error_msg {
+    text-align: center;
+    color: #f33;
+}
+.widget_cancel_btn {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding: 1px 10px;
+    color: #959595;
+    #font > .proxima-nova-regular(15px, 21px);
+}
+/*.widget_cancel_model {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}*/
+.widget_form_state.widget_form_state {
+    float: left;
+    margin-right: 10px;
+    width: 95px;
+    padding-right: 0px;
+}
+.widget_form_pin_wrap.widget_form_pin_wrap {
+    float: left;
+    width: 135px;
+    padding-right: 0px;
+}
+.widget_form_bottom {
+    padding-right: 15px;
+}
